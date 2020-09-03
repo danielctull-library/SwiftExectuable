@@ -13,7 +13,12 @@ let package = Package(
     products: [
         .executable(name: "xXxprojectxXx", targets: ["xXxprojectxXx"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/apple/swift-argument-parser", from: "0.3.0"),
+    ],
     targets: [
-        .target(name: "xXxprojectxXx"),
+        .target(name: "xXxprojectxXx", dependencies: [
+            .product(name: "ArgumentParser", package: "swift-argument-parser"),
+        ]),
     ]
 )
