@@ -15,6 +15,5 @@ let package = Package(
     ],
     targets: [
         .target(name: "xXxprojectxXx"),
-        .testTarget(name: "xXxprojectxXxTests", dependencies: ["xXxprojectxXx"]),
     ]
 )
