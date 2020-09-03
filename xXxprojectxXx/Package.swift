@@ -11,7 +11,7 @@ let package = Package(
         .watchOS(.v7),
     ],
     products: [
-        .library(name: "xXxprojectxXx", targets: ["xXxprojectxXx"]),
+        .executable(name: "xXxprojectxXx", targets: ["xXxprojectxXx"]),
     ],
     targets: [
         .target(name: "xXxprojectxXx"),
